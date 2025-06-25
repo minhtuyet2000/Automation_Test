@@ -81,18 +81,18 @@ public class amazonSearchResultPage {
             }
             Thread.sleep(2000);
             driver.navigate().back();
-//            Thread.sleep(2000);
-//            WebElement juniors = driver.findElement(By.xpath("//li[@id='p_n_shoe_width_browse-vebin/13130370011']//input[@type='checkbox']"));
-//            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", juniors);
-//            String isjuniorsChecked = juniors.getAttribute("checked");
-//            if (isjuniorsChecked == null) {
-//                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", juniors);
-//                logger.info("Click juniors danh muc Special Clothing Size thanh cong");
-//            } else {
-//                logger.info("juniors danh muc Special Clothing Size da duoc chon");
-//            }
-//            Thread.sleep(2000);
-//            driver.navigate().back();
+            Thread.sleep(2000);
+            WebElement juniors = driver.findElement(By.xpath("//li[@id='p_n_shoe_width_browse-vebin/13130370011']//input[@type='checkbox']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", juniors);
+            String isjuniorsChecked = juniors.getAttribute("checked");
+            if (isjuniorsChecked == null) {
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", juniors);
+                logger.info("Click juniors danh muc Special Clothing Size thanh cong");
+            } else {
+                logger.info("juniors danh muc Special Clothing Size da duoc chon");
+            }
+            Thread.sleep(2000);
+            driver.navigate().back();
             Thread.sleep(2000);
             WebElement topAdidas = driver.findElement(By.xpath("//h2[@id='loom-desktop-top-slot_us-slds-sp-2-t1-a2-heading']"));
             logger.info("Hien thi " + topAdidas.getText());
